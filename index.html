@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shazam Sync</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: #1a1a1a;
+  }
+  h1 { margin-bottom: 0.25rem; }
+  .tagline { color: #555; margin-top: 0; }
+  h2 { margin-top: 2rem; font-size: 1.15rem; }
+  ul { padding-left: 1.25rem; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #666; border-top: 1px solid #ddd; padding-top: 1rem; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+
+<h1>Shazam Sync</h1>
+<p class="tagline">A personal tool that adds songs identified with Shazam to a YouTube playlist.</p>
+
+<h2>What it does</h2>
+<p>
+  Shazam Sync is a small personal script that runs on its owner's own Windows
+  computer. It reads screenshots of the Shazam app's song list that the owner
+  has saved to a folder in their own Google Drive, reads the song titles and
+  artist names out of those screenshots, searches YouTube for each song, and
+  adds the matching video to a playlist called "Shazam" on the owner's own
+  YouTube account.
+</p>
+<p>
+  It runs on a schedule so that newly identified songs are collected into that
+  playlist without the owner having to add each one by hand.
+</p>
+
+<h2>How it uses Google services</h2>
+<ul>
+  <li>
+    <strong>Google Drive (read only)</strong> &mdash; to list and download the
+    screenshot images in one folder that the owner has chosen.
+  </li>
+  <li>
+    <strong>YouTube</strong> &mdash; to create the "Shazam" playlist if it does
+    not exist yet, to see which videos are already in it, and to add new videos
+    to it.
+  </li>
+</ul>
+
+<h2>Who it is for</h2>
+<p>
+  This application is used by its owner only, on their own Google account. It is
+  not a product, it is not distributed, and there is no sign-up.
+</p>
+
+<h2>Privacy</h2>
+<p>
+  See the <a href="privacy.html">privacy policy</a> for details on what data the
+  application accesses and how it is handled.
+</p>
+
+<footer>
+  Shazam Sync is a personal project. It is not affiliated with, endorsed by, or
+  connected to Apple, Shazam, Google, or YouTube.
+</footer>
+
+</body>
+</html>
